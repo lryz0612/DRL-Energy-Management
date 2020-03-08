@@ -11,9 +11,8 @@ In this research, a backward HEV model is built for the training and evaluation 
  
  ## DRL-based energy management strategy
 
- <div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
- 
- <"center">Fig.3. Agent-environment interaction for HEV energy management</"center">
+<div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
+<center>Fig.3. Agent-environment interaction for HEV energy management</center>
 
 
 State = {SoC, velocity, acceleration}
