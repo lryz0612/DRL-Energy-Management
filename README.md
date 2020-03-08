@@ -9,6 +9,8 @@ In this research, a backward HEV model is built for the training and evaluation 
  
  ## DRL-based energy management strategy
 
+ <div align="center"><img height="400" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
+
 State = {SoC, velocity, acceleration}
 
 Action = {continuous action: engine power}
