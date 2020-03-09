@@ -11,13 +11,19 @@ In this research, a backward HEV model is built for the training and evaluation 
 &emsp;&emsp;&emsp; Fig. 1. Architecture of Prius powertrain &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 2. Engine map and battery characteristics
  
  ## DRL-based energy management strategy
-
-<div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
-<center>Fig.3.Agent-environment interaction for HEV energy management</center>
+DRL agent is encountered with an environment with Markov property. The agent and the environment interact continually, the agent selecting actions and the environment responding rewards to these actions and presenting new states to the agent. In this research, DDPG algorithm is incorporated with the expert knowledge of HEV to learn the optimal EMS action. Fig. 3 shows the agent-environment interaction of HEV energy management, i.e. the interaction between the EMS and the vehicle and traffic information. The state and action variables are set as follows, where the continuous action variables are explored from the optimal BSFC curve of engine. The reward function of DDPG-based EMS consists of two parts: the instantaneous fuel consumption of engine and the cost of battery charge sustaining. Thus, the multi-objective reward function is defined as:
 
 **State = {SoC, velocity, acceleration}**
 
 **Action = {continuous action: engine power}**
+
+![](http://latex.codecogs.com/gif.latex?\\Reward = )
+**$Reward = -{\alpha[fuel consumption(t)]+ \beta[SoC_{ref} - SoC(t)]^{2}}$**
+
+<div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
+
+
 
 ### Evaluation metrics of DRL-based EMS
 
