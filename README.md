@@ -17,8 +17,7 @@ DRL agent is encountered with an environment with Markov property. The agent and
 
 **Action = {continuous action: engine power}**
 
-![](http://latex.codecogs.com/gif.latex?\\Reward = )
-**$Reward = -{\alpha[fuel consumption(t)]+ \beta[SoC_{ref} - SoC(t)]^{2}}$**
+**$Reward = -{\alpha[fuel(t)]+ \beta[SoC_{ref} - SoC(t)]^{2}}$**
 
 <div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
