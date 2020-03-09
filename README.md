@@ -25,10 +25,10 @@ DRL agent is encountered with an environment with Markov property. The agent and
  ## Simulation results
  The simplified action space improves the convergence efficiency by 70.6%. The learning efficiency and performance robustness of RI DDPG make it more propitious to real applications in HEVs.
 
- <div align="center"><img width="350" src=" https://github.com/lryz0612/Image/blob/master/Working%20points%20of%20engine.jpg"/><img width="450" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/></div>
+ <div align="center"><img width="450" src="https://github.com/lryz0612/Image/blob/master/Working%20points%20of%20engine.jpg"/><img width="400" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 11. Working points of engine &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 12. Distributions of fuel consumption rate
 
-<div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
+<div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
 
  
