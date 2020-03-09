@@ -44,5 +44,12 @@ For further verification, different driving cycles are introduced into the two E
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
 
+## The code structure
 
+- The Data_Standard Driving Cycles folder contains the driving cycle for training DRL agents.
+- Prius_model_new.py is the backward simulation model of the Prius powertrain. 
+- Mot_eta_quarter.mat and Eng_bsfc_map.mat are the efficiency maps of the motor and engine.
+- Priority_Replay.py is the priority replay module for training DRL agents.
+- DeepQNetwork_Prius.py performs training for DQN agent.
+- DDPG_Prius.py performs training for DDPG agent.
 
