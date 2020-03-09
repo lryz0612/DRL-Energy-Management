@@ -25,6 +25,11 @@ DRL agent is encountered with an environment with Markov property. The agent and
  ## Simulation results
 The simplified action space improves the convergence efficiency by 70.6%. The learning efficiency and performance robustness of RI DDPG make it more propitious to real applications in HEVs.
 
+we make extensive comparison experiments between RI DDPG and RI DQL, wherein they share the same embedded expert knowledge. The performance of the two models are evaluated according to the evaluation metrics defined in section 3.3.
+Fig. 10 shows the differences of SoC trajectories among DP, RI DDPG and RI DQL under new European driving cycle (NEDC), where their values of terminal SoC are much the same, approximately at 0.6. From Fig. 11 and Fig. 12, it can be found that most of the engine working points of DDPG are distributed in areas with lower equivalent fuel consumption rate, while those of RI DQL are relatively poor. For this reason, the fuel economy of RI DDPG reaches 95.3% of DP’s, and get a decrease of 6.5% compared to that of RI DQL, as shown in table 5. In Fig. 13, it can be seen that RI DQL is difficult to guarantee its convergence and fluctuates more frequently as compared with RI DDPG that converges to a stable state after 50th episode. In order to train an EMS for a HEV online, the training process of a controller must be stable enough to guarantee the safety of powertrain. The stability of RI DDPG shows that it is more applicable to real-world applications of DRL-based EMSs.
+For further verification, different driving cycles are introduced into the two EMSs. The simulation results in table 5 demonstrate the superiority of RI DDPG algorithm in performance robustness, where the mean and standard deviation of fuel economy are improved by 8.94% and 2.74% respectively.
+
+
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/SoC%20trajectories%20of%20the%20three%20EMS%20models.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 10. SoC trajectories of the three EMS models
 
@@ -33,6 +38,10 @@ The simplified action space improves the convergence efficiency by 70.6%. The le
 
 <div align="center"><img width="450" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/><img width="450" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 12. Distributions of fuel consumption rate &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 13. Convergence curves 
+
+<div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Table 1. Comparison between RI DDPG and RI DQL under different driving cycles
+
 
 
 
