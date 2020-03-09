@@ -251,7 +251,8 @@ for i in range(MAX_EPISODES):
     s[2] = SOC
     for j in range(car_spd_one.shape[1] - 1):
         action = DQN.choose_action(s)
-
+        # According to Wu, Jingda, et al. "Continuous reinforcement learning of energy management with deep Q network for a power split hybrid electric bus." Applied energy 222 (2018): 799-811.
+        # The current action of DQN is defined by variation of preivous time step action.
         if action == 0:
             a += 0
         if action == 1:
