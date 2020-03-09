@@ -131,6 +131,8 @@ class DDPG(object):
 #    def loadmodel(self):
 #        self.loader.restore(self.sess, 'Prius/save_net.ckpt')
 
+#####################  Training Process  ####################
+
 s_dim = 3
 a_dim = 1
 a_bound = 1
