@@ -5,7 +5,7 @@ A rule-interposing deep reinforcement learning (RIDRL) based energy management s
  ## Prius modelling
 As shown in Fig. 1, the core power-split component of Prius is a planetary gear (PG) which splits power among the engine, motor and generator. In this structure, its engine and generator are connected with the planet carrier and sun gear respectively, and its motor is connected with the ring gear that is linked with the output shaft simultaneously. In addition, Prius is equipped with a small capacity Nickel metal hydride (Ni-MH) battery which is used to drive the traction motor and generator. Prius combines the advantages of series and parallel HEVs, and consists of three driving modes: pure electric mode, hybrid mode and charging mode.
  
-In this research, a backward HEV model is built for the training and evaluation of EMS [32]. The vehicle power demand under the given driving cycle is calculated by the longitudinal force balance equation. The engine, generator and motor are modeled by their corresponding efficiency maps from bench experiments. The Ni-MH battery is modeled by an equivalent circuit model, wherein the impact of the temperature change and battery aging are not considered. 
+In this research, a backward HEV model is built for the training and evaluation of EMS. The vehicle power demand under the given driving cycle is calculated by the longitudinal force balance equation. The engine, generator and motor are modeled by their corresponding efficiency maps from bench experiments. The Ni-MH battery is modeled by an equivalent circuit model, wherein the impact of the temperature change and battery aging are not considered. 
 
  <div align="center"><img width="350" src="https://github.com/lryz0612/Image/blob/master/Prius.jpg"/><img width="450" src="https://github.com/lryz0612/Image/blob/master/engine%20map%20%26%20battery.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 1. Architecture of Prius powertrain &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 2. Engine map and battery characteristics
@@ -22,7 +22,7 @@ DRL agent is encountered with an environment with Markov property. The agent and
 where α is the weight of fuel consumption, β the weight of battery charge sustaining, and $SoC_{ref}$ the SoC reference value while maintaining battery charge-sustaining.
 
 <div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
 
  ## Simulation results
 we make extensive comparison experiments between RI DDPG and RI DQL, wherein they share the same embedded expert knowledge. The performance of the two models are evaluated according to the evaluation metrics defined in section 3.3.
@@ -31,13 +31,13 @@ For further verification, different driving cycles are introduced into the two E
 
 
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/SoC%20trajectories%20of%20the%20three%20EMS%20models.jpg"/></div>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 4. SoC trajectories of the three EMS models
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 4. SoC trajectories of the three EMS models
 
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Working%20points%20of%20engine.jpg"/></div>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 5. Working points of engine
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 5. Working points of engine
 
 <div align="center"><img width="420" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/><img width="420" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
-&emsp;&emsp;&emsp; Fig. 6. Distributions of fuel consumption rate &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 7. Convergence curves 
+&emsp;&emsp;&emsp; Fig. 6. Distributions of fuel consumption rate &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 7. Convergence curves 
 
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
