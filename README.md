@@ -8,7 +8,7 @@ As shown in Fig. 1, the core power-split component of Prius is a planetary gear 
 In this research, a backward HEV model is built for the training and evaluation of EMS [32]. The vehicle power demand under the given driving cycle is calculated by the longitudinal force balance equation. The engine, generator and motor are modeled by their corresponding efficiency maps from bench experiments. The Ni-MH battery is modeled by an equivalent circuit model, wherein the impact of the temperature change and battery aging are not considered. 
 
  <div align="center"><img width="350" src="https://github.com/lryz0612/Image/blob/master/Prius.jpg"/><img width="450" src="https://github.com/lryz0612/Image/blob/master/engine%20map%20%26%20battery.jpg"/></div>
-     Fig. 1. Architecture of Prius powertrain  <tab>       Fig. 2. Engine map and battery characteristics
+ Fig. 1. Architecture of Prius powertrain  &nbsp  &nbsp     Fig. 2. Engine map and battery characteristics
  
  ## DRL-based energy management strategy
 
