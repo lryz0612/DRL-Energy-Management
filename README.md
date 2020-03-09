@@ -35,11 +35,12 @@ For further verification, different driving cycles are introduced into the two E
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 4. SoC trajectories of the three EMS models
 
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Working%20points%20of%20engine.jpg"/></div>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 5. Working points of engine
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 5. Working points of engine
 
 <div align="center"><img width="420" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/><img width="420" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 6. Distributions of fuel consumption rate &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 7. Convergence curves 
 
+&emsp;&emsp;&emsp;&emsp;&emsp; Table 1. Comparison between RI DDPG and RI DQL under different driving cycles
 <div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
 
