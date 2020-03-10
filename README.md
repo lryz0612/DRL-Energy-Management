@@ -8,7 +8,7 @@ As shown in Fig. 1, the core power-split component of Prius is a planetary gear 
  
 In this research, a backward HEV model is built for the training and evaluation of EMS. The vehicle power demand under the given driving cycle is calculated by the longitudinal force balance equation. The engine (Fig. 2), generator and motor are modeled by their corresponding efficiency maps from bench experiments. The Ni-MH battery is modeled by an equivalent circuit model, wherein the impact of the temperature change and battery aging are not considered. The experiment data of battery including internal resistance and open-circuit voltage is shown in Fig. 2.
 
- <div align="center"><img width="350" src="https://github.com/lryz0612/Image/blob/master/Prius.jpg"/><img width="450" src="https://github.com/lryz0612/Image/blob/master/engine%20map%20%26%20battery.jpg"/></div>
+ <div align="center"><img width="350" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/Prius.jpg"/><img width="450" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/engine%20map%20and%20battery.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 1. Architecture of Prius powertrain &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 2. Engine map and battery characteristics
  
  ## DRL-based energy management strategy
@@ -22,7 +22,7 @@ DRL agent is encountered with an environment with Markov property. The agent and
 
 where α is the weight of fuel consumption, β the weight of battery charge sustaining, and $SoC_{ref}$ the SoC reference value while maintaining battery charge-sustaining. The SoC_{ref} is determined by the prior knowledge of the battery.
 
-<div align="center"><img height="350" src="https://github.com/lryz0612/Image/blob/master/DRL.jpg"/></div>
+<div align="center"><img height="350" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/DRL.jpg"/></div>
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
 
  ## Simulation results
@@ -30,23 +30,24 @@ We make extensive comparison experiments between RI DDPG and RI deep Q learning 
 For further verification, different driving cycles are introduced into the two EMSs. The simulation results in table 1 demonstrate the superiority of RI DDPG algorithm in performance robustness, where the mean and standard deviation of fuel economy are improved by 8.94% and 2.74% respectively.
 
 
-<div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/SoC%20trajectories%20of%20the%20three%20EMS%20models.jpg"/></div>
+<div align="center"><img height="250" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/SoC%20trajectories%20of%20the%20three%20EMS%20models.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 4. SoC trajectories of the three EMS models
 
-<div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Working%20points%20of%20engine.jpg"/></div>
+<div align="center"><img height="250" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/Working%20points%20of%20engine.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 5. Working points of engine
 
-<div align="center"><img width="420" src="https://github.com/lryz0612/Image/blob/master/brake%20specific%20fuel%20consumption.jpg"/><img width="420" src="https://github.com/lryz0612/Image/blob/master/Convergence%20curves.jpg"/></div>
+<div align="center"><img width="420" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/brake%20specific%20fuel%20consumption.jpg"/><img width="420" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/Convergence%20curves.jpg"/></div>
 &emsp;&emsp;&emsp; Fig. 6. Distributions of fuel consumption rate &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 7. Convergence curves 
 
 
 &emsp;&emsp;&emsp;&emsp;&emsp; Table 1. Comparison between RI DDPG and RI DQL under different driving cycles
-<div align="center"><img height="250" src="https://github.com/lryz0612/Image/blob/master/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
+<div align="center"><img height="250" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
 
 ## The code structure
 
 - The Data_Standard Driving Cycles folder contains the driving cycle for training DRL agents.
+- The Image folder contains the figures showed in this research.
 - Prius_model_new.py is the backward simulation model of the Prius powertrain. 
 - Mot_eta_quarter.mat and Eng_bsfc_map.mat are the efficiency maps of the motor and engine.
 - Priority_Replay.py is the priority replay module for training DRL agents.
