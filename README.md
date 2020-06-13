@@ -58,3 +58,16 @@ For further verification, different driving cycles are introduced into the two E
 
 The codes of DDPG and DQN models are developed according to [MorvanZhou](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)'s DRL course. 
 
+## Collaborators
+--------------
+
+<table>
+  <tr>
+   <td align="center"><a href="https://github.com/lryz0612"><img src="https://github.com/lryz0612.png?size=80" width="80px;" alt="Renzong Lian"/><br /><sub><b>Renzong Lian</b></sub></a><br /><a href="https://github.com/lryz0612/DRL-Energy-Management/commits?author=lryz0612" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Kaimaoge"><img src="https://github.com/Kaimaoge.png?size=80" width="80px;" alt="Yuankai Wu"/><br /><sub><b>Yuankai Wu</b></sub></a><br /><a href="https://github.com/lryz0612/DRL-Energy-Management/commits?author=Kaimaoge" title="Code">💻</a></td>
+ 
+<!--   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/xxxx"><img src="https://github.com/xxxx.png?size=100" width="100px;" alt="xxxx"/><br /><sub><b>xxxx</b></sub></a><br /><a href="https://github.com/xinychen/transdim/commits?author=xxxx" title="Code">💻</a></td> -->
+  </tr>
+</table>
