@@ -1,7 +1,7 @@
 # Deep reinforcement learning based energy management strategy for hybrid electric vehicle
 **This research is cited from: Lian R, Peng J, Wu Y, et al. Rule-interposing deep reinforcement learning based energy management strategy for power-split hybrid electric vehicle. Energy, 2020: 117297.**
 
-Happy to answer any questions you have. Please email me at lianrz612@gmail.com.
+Happy to answer any questions you have. Please email us at lianrz612@gmail.com or kaimaogege@gmail.com.
 
 A rule-interposing deep reinforcement learning (RIDRL) based energy management strategy (EMS) of hybrid electric vehicle (HEV) is investigated. Incorporated with the battery characteristics and the optimal brake specific fuel consumption (BSFC) curve of hybrid electric vehicles (HEVs), we are committed to acclerating the learning process of DRL agents on EMS.
  
