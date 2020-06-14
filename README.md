@@ -1,5 +1,5 @@
 # Deep reinforcement learning based energy management strategy for hybrid electric vehicle
-**This research is cited from: Lian R, Peng J, Wu Y, et al. Rule-interposing deep reinforcement learning based energy management strategy for power-split hybrid electric vehicle. Energy, 2020: 117297.**
+**This research is cited from: [Lian R, Peng J, Wu Y, et al. Rule-interposing deep reinforcement learning based energy management strategy for power-split hybrid electric vehicle. Energy, 2020: 117297.](https://www.sciencedirect.com/science/article/pii/S0360544220304047)**
 
 Happy to answer any questions you have. Please email us at lianrz612@gmail.com or kaimaogege@gmail.com.
 
