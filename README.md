@@ -48,11 +48,11 @@ For further verification, different driving cycles are introduced into the two E
 
 ## Dependencies
 
-Tensorflow 1.15.0
+- Tensorflow 1.15.0
 
-numpy
+- numpy
 
-matplotlib
+- matplotlib
 
 ## The code structure
 
