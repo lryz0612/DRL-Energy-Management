@@ -48,7 +48,7 @@ For further verification, different driving cycles are introduced into the two E
 
 ## Dependencies
 
-- Tensorflow 1.15.0
+- tensorflow 1.15.0
 
 - numpy
 
