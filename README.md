@@ -46,6 +46,12 @@ For further verification, different driving cycles are introduced into the two E
 <div align="center"><img height="250" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/Comparison%20between%20RI%20DDPG%20and%20RI%20DQL.jpg"/></div>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
 
+## Dependencies
+
+Tensorflow 1.15.0
+numpy
+matplotlib
+
 ## The code structure
 
 - The Data_Standard Driving Cycles folder contains the driving cycle for training DRL agents.
