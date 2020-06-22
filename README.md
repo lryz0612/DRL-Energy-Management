@@ -54,6 +54,8 @@ For further verification, different driving cycles are introduced into the two E
 
 - matplotlib
 
+- scipy
+
 ## The code structure
 
 - The Data_Standard Driving Cycles folder contains the driving cycle for training DRL agents.
