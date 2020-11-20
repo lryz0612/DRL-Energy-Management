@@ -216,12 +216,12 @@ for i in range(MAX_EPISODES):
         SOC_new = float(out['SOC'])
         SOC_data.append(SOC_new)
         cost = float(cost)
-        r = -cost
+        r = cost
         ep_reward += r
         Reward_list.append(r)
         
         if SOC_new < 0.6 or SOC_new > 0.85:
-            r = -((350 * ((0.6 - SOC_new) ** 2)) + cost)
+            r = ((350 * ((0.6 - SOC_new) ** 2)) + cost)
         
         # Obtained from the wheel speed sensor            
         car_spd = car_spd_one[:, j + 1]
