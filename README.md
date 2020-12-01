@@ -28,8 +28,9 @@ where α is the weight of fuel consumption, β the weight of battery charge sust
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. Agent-environment interaction for HEV energy management
 
  ## Simulation results
-We make extensive comparison experiments between RI DDPG and RI deep Q learning (DQL), wherein they share the same embedded expert knowledge. Fig. 4 shows the differences of SoC trajectories among dynamic programming (DP), RI DDPG, and RI DQL under the new European driving cycle (NEDC), where their values of terminal SoC are much the same, approximately at 0.6. From Fig. 5 and Fig. 6, it can be found that most of the engine working points of DDPG are distributed in areas with lower equivalent fuel consumption rates, while those of RI DQL is relatively poor. For this reason, the fuel economy of RI DDPG reaches 95.3% of DP’s and get a decrease of 6.5% compared to that of RI DQL, as shown in table 5. In Fig. 7, it can be seen that RI DQL is challenging to guarantee its convergence and fluctuates more frequently as compared with RI DDPG that converges to a stable state after the 50th episode. In order to train EMS for an HEV online, the training process of a controller must be sturdy enough to guarantee the safety of the powertrain. The stability of RI DDPG shows that it is more applicable to real-world applications of DRL-based EMSs.
-For further verification, different driving cycles are introduced into the two EMSs. The simulation results in table 1 demonstrate the superiority of the RI DDPG algorithm in performance robustness, where the mean and standard deviation of fuel economy is improved by 8.94% and 2.74%, respectively.:
+Extensive comparison experiments are made between RI DDPG and RI deep Q learning (DQL), in which they share the same embedded expert knowledge. Fig. 4 shows the differences of SoC trajectories among dynamic programming (DP), RI DDPG, and RI DQL under the new European driving cycle (NEDC), where their values of terminal SoC are much the same, approximately at 0.6. In Fig. 5 and Fig. 6, it can be found that most of the engine working points of DDPG are distributed in areas with lower equivalent fuel consumption rates, while those of RI DQL is relatively poor. In table 5, The fuel economy of RI DDPG reaches 95.3% of DP’s and get a decrease of 6.5% compared to that of RI DQL. In Fig. 7, RI DQL is hard to guarantee its convergence and fluctuates more frequently compared with RI DDPG that converges to a stable state after the 50th episode. In order to train an EMS for an HEV online, the training process of a controller must be sturdy enough to guarantee the safety of the powertrain. The stability of RI DDPG shows that it is more applicable to real-world applications of DRL-based EMSs.
+
+For further verification, different driving cycles are introduced into these two EMSs. The simulation results in table 1 demonstrate the superiority of the RI DDPG algorithm in performance robustness, where the mean and standard deviation of fuel economy are improved by 8.94% and 2.74%, respectively.:
 
 
 <div align="center"><img height="250" src="https://github.com/lryz0612/Deep-reinforcement-learning-based-energy-management-strategy-for-hybrid-electric-vehicle/blob/master/Image/SoC%20trajectories%20of%20the%20three%20EMS%20models.jpg"/></div>
@@ -58,14 +59,15 @@ For further verification, different driving cycles are introduced into the two E
 
 ## The code structure
 
-- The Data_Standard Driving Cycles folder contains the driving cycle for training DRL agents.
-- The Image folder contains the figures showed in this research.
-- Prius_model_new.py is the backward simulation model of the Prius powertrain. 
-- Mot_eta_quarter.mat and Eng_bsfc_map.mat are the efficiency maps of the motor and engine.
-- Priority_Replay.py is the priority replay module for training DRL agents.
-- DeepQNetwork_Prius.py performs training for DQN agent.
-- DDPG_Prius.py performs training for DDPG agent.
-- Prius modelling.ipynb illustrates the modelling process of power-split HEV.
+- The **Data_Standard Driving Cycles** folder contains the driving cycle for training DRL agents.
+- The **Image** folder contains the figures showed in this research.
+- **Prius_model_new.py** is the backward simulation model of the Prius powertrain. 
+- **Prius modelling.ipynb** illustrates the modelling process of power-split HEV.
+- **Mot_eta_quarter.mat** and Eng_bsfc_map.mat are the efficiency maps of the motor and engine.
+- **Priority_Replay.py** is the priority replay module for training DRL agents.
+- **DeepQNetwork_Prius.py** performs training for DQN agent.
+- **DDPG_Prius.py** performs training for DDPG agent.
+
 
 The codes of DDPG and DQN models are developed according to [MorvanZhou](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)'s DRL course. 
 
