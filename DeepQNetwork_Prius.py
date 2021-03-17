@@ -15,7 +15,7 @@ from Priority_Replay import Memory, SumTree
 #####################  hyper parameters  ####################
 
 MAX_EPISODES = 1500
-memory_capacity = 10000
+memory_capacity = 20000
 batch_size = 64
 learning_rate = 0.001
 reward_decay = 0.9
