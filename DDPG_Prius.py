@@ -21,7 +21,7 @@ LR_A = 0.001    # learning rate for actor
 LR_C = 0.001    # learning rate for critic
 GAMMA = 0.9     # reward discount
 TAU = 0.01      # soft replacement
-MEMORY_CAPACITY = 20000
+MEMORY_CAPACITY = 10000
 BATCH_SIZE = 64
 
 RENDER = False
@@ -138,7 +138,7 @@ a_dim = 1
 a_bound = 1
 DDPG = DDPG(a_dim, s_dim, a_bound)
 # control exploration
-var = 1.5
+var = 2
 data_path = 'Data_Standard Driving Cycles/Standard_NEDC.mat'
 data = scio.loadmat(data_path)
 car_spd_one = data['speed_vector']
