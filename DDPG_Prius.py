@@ -129,7 +129,8 @@ class DDPG(object):
         self.saver.save(self.sess, 'Checkpoints/Prius/save_net.ckpt', global_step = step_episode)
             
 #    def loadmodel(self):
-#        self.loader.restore(self.sess, 'Prius/save_net.ckpt')
+#        self.saver = tf.train.Saver() 
+#        self.saver.restore(self.sess, 'Prius/save_net.ckpt')
 
 #####################  Training Process  ####################
 
