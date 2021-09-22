@@ -67,6 +67,7 @@ For further verification, different driving cycles are introduced into these two
 - **Priority_Replay.py** is the priority replay module for training DRL agents.
 - **DeepQNetwork_Prius.py** performs training for DQN agent.
 - **DDPG_Prius.py** performs training for DDPG agent.
+- **DDPG_Prius_test.py** performs testing for DDPG agent.
 
 
 The codes of DDPG and DQN models are developed according to [MorvanZhou](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)'s DRL course. 
