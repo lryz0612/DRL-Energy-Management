@@ -68,6 +68,10 @@ For further verification, different driving cycles are introduced into these two
 
 
 The codes of DDPG and DQN models are developed according to [MorvanZhou](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)'s DRL course. 
+The requirements.txt file should list all Python libraries that our projects depend on, and they will be installed using:
+```
+conda install --yes --file requirements.txt
+```
 
 ## Collaborators
 --------------
