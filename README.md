@@ -51,11 +51,7 @@ For further verification, different driving cycles are introduced into these two
 
 - tensorflow 1.15.0
 
-- numpy
-
-- matplotlib
-
-- scipy
+- python 3.6.8
 
 ## The code structure
 
