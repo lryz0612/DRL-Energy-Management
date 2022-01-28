@@ -49,7 +49,7 @@ For further verification, different driving cycles are introduced into these two
 
 ## Dependencies
 
-- tensorflow 1.15.0
+- tensorflow 1.14.0
 
 - python 3.6.8
 
