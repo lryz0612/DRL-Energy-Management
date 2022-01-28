@@ -61,7 +61,7 @@ For further verification, different driving cycles are introduced into these two
 
 - The **Data_Standard Driving Cycles** folder contains the driving cycle for training DRL agents.
 - The **Image** folder contains the figures showed in this research.
-- The **requirements** file contains environments used in the project.
+- The **requirements** file contains the components of environment used in this project.
 - **Prius_model_new.py** is the backward simulation model of the Prius powertrain. 
 - **Prius modelling.ipynb** illustrates the modelling process of power-split HEV.
 - **Mot_eta_quarter.mat** and Eng_bsfc_map.mat are the efficiency maps of the motor and engine.
